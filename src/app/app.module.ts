@@ -12,6 +12,9 @@ import { FestInfoComponent } from './components/fest-info/fest-info.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GiftListComponent } from './components/gift-list/gift-list.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { AttendComponent } from './components/attend/attend.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { FooterComponent } from './components/footer/footer.component';
     FestInfoComponent,
     ContactComponent,
     ImageGalleryComponent,
-    FooterComponent
+    FooterComponent,
+    AttendComponent,
+    GiftListComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

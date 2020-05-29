@@ -1,0 +1,40 @@
+/*@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+@import "./mixins";
+
+section.asistencia {
+    padding: 40px 0;
+    text-align: center;
+    color: fade-out(white, .2);
+
+    @include grandient_trans_img($theme-tertiary-dark, $theme-secondary-dark, '../img/gallery/gallery-1.jpg');
+
+    .container {
+        border: solid;
+        padding: 150px 0;
+        form {
+            padding: 20px;
+    
+            input {
+                border-radius: 2px;
+            }
+
+            button {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            border: transparent;
+            padding: 40px 20px;
+        }
+
+    }
+
+    .modal {
+        color: #222;
+    }
+
+    
+}*/
