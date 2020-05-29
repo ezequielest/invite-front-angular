@@ -1,0 +1,32 @@
+@import '../../../assets/scss/variables';
+
+.countdown-container{
+    padding: 100px 0;
+    h3 {
+        text-align: center;
+    }
+}
+
+::ng-deep {
+    .countdown {
+    margin-top: 20px;
+    width: 100%;
+
+    .measurements {
+        color: white;
+        margin-right: 5px;
+        text-align: center;
+        padding: 20px 0;
+        background: $theme-secondary;
+        border-radius: 5px;
+    }
+
+    .measurements-number {
+        font-size: 30px;
+    }
+
+    .divider {
+        font-size: 30px;
+    }
+}
+}

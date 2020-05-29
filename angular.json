@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "invite-front"
+    }
+  },
+  "defaultProject": "invite-front",
+  "cli": {
+    "analytics": "d2b623d6-0337-4316-a5c3-4c99b5d11367"
+  }
 }
