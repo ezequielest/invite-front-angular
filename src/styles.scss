@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+section {
+    padding: 150px 0;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    font-family: 'Catamaran';
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.btn {
+    border-radius: 300px;
+    font-family: 'Lato';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &.btn-outline {
+        color: white;
+        border: 1px solid;
+        border-color: white;
+    }
+
+    &.btn-xl {
+        font-size: 11px;
+        padding: 15px 45px;
+    }
+}

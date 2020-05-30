@@ -58,14 +58,10 @@ header.masthead {
                 }
             }
         }
-        @media (min-width: 992px) {
-            min-height: 775px;
-        }
            
     }
     @media (min-width: 992px) {
         height: 100vh;
-        min-height: 775px;
         padding-top: 0;
         padding-bottom: 0;
         .header-content {
