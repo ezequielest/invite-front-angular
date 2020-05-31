@@ -1,0 +1,34 @@
+<section class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">Confirmá tu asistencia</h2>
+          <!--<h4>Tenés tiempo de confirmar hasta el 15/01/2020</h4>-->
+          <p></p>
+          <form id="formAssistence" action="" name="contact" role="form">
+              <div class="form-group">
+                <label for="">Nombre y Apellido (*)</label>
+                <input id="name" name="name" type="text" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="">Cantidad de personas</label>
+                <input id="personasConfirmadas" name="personasConfirmadas" type="number" min="1" max="10 "class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Teléfono</label>
+                <input id="phone" name="phone" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Mensaje</label>
+                <textarea id="message" name="message" cols="30" rows="5"  class="form-control"></textarea >
+              </div>
+              <div>
+                (*) campos obligatorios.
+              </div>
+              <button class="btn btn-outline btn-xl js-scroll-trigger">Enviar</button>
+          </form>
+          <div class="rta"></div>
+        </div>
+      </div>
+    </div>
+  </section>

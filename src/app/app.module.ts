@@ -15,6 +15,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GiftListComponent } from './components/gift-list/gift-list.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { AttendComponent } from './components/attend/attend.component';
+import { WhatsappContactComponent } from './components/whatsapp-contact/whatsapp-contact.component';
+import { FormEmailComponent } from './components/form-email/form-email.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,11 +34,17 @@ import { AttendComponent } from './components/attend/attend.component';
     FooterComponent,
     AttendComponent,
     GiftListComponent,
-    LoadingComponent
+    LoadingComponent,
+    WhatsappContactComponent,
+    FormEmailComponent
+
   ],
   imports: [
     BrowserModule,
-    CountdownModule
+    CountdownModule,
+    HttpClientModule,
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,8 +2,20 @@
 <app-slider></app-slider>
 <app-countdown></app-countdown>
 <app-summary></app-summary>
-<app-fest-info></app-fest-info>
+<app-fest-info [config]="configCeremonia"></app-fest-info>
+<app-fest-info [config]="configFiesta"></app-fest-info>
 <app-contact></app-contact>
+
+<app-whatsapp-contact></app-whatsapp-contact>
 <app-image-gallery></app-image-gallery>
-<app-attend></app-attend>
+
+<div *ngIf="!isApp else app">
+    <app-form-email></app-form-email>
+</div>
+<ng-template #app>
+    <app-attend></app-attend>
+</ng-template>
+
+<app-gift-list></app-gift-list>
+
 <app-footer></app-footer>

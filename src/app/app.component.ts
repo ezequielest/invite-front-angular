@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppSettings } from './configs/settings.const';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'invite-front';
+  title = 'Invite | ' + AppSettings.inicialesNovios;
+  isApp = true;
+
+  iniciales = AppSettings.inicialesNovios;
+  configCeremonia = AppSettings.configCeremonia;
+  configFiesta = AppSettings.configFiesta;
+
 }

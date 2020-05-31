@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppSettings } from 'src/app/configs/settings.const';
 
 declare var $;
 

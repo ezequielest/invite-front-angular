@@ -1,22 +1,22 @@
-<!--<div class="general-gift-list">
+<section class="general-gift-list">
     <div class="container">
       <h2 class="section-heading text-center">Lista de regalos</h2>
       <div class="gift-container">
-        <div class="item" v-for="gift in giftList" v-bind:class="{'available': !gift.alreadyDone, 'not-available': gift.alreadyDone}">  
-          <template v-if="gift.alreadyDone">
+
+        <div class="item" *ngFor="let gift of gifts" [ngClass]="{'available': !gift.alreadyDone,'not-available': gift.alreadyDone}">  
+          <div *ngIf="gift.alreadyDone else notDone">
             {{gift.description}} - YA LO TIENEN
-          </template>
-          <template v-if="!gift.alreadyDone">
+          </div>
+          <ng-template #notDone>
             {{gift.description}}
-            <button class="btn btn-outline btn-xl" data-toggle="modal" data-target="#giftModal" v-on:click="selectGift(gift)">regalar</button></li>
-          </template>
-           
+            <button class="btn btn-outline btn-xl" data-toggle="modal" data-target="#giftModal" (click)="selectGift(gift)">regalar</button>
+          </ng-template>           
         </div>
       
       </div>
     </div>
   
-    <div id="giftModal" class="modal" tabindex="-1" role="dialog" v-if="giftSelected">
+    <div id="giftModal" class="modal" tabindex="-1" role="dialog" *ngIf="giftSelected">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
 
@@ -30,20 +30,20 @@
           <div class="modal-body">
             <h6>Estas por regalar: {{ giftSelected.description }}</h6>
             <p>Recorga que tu regalo es para confirmarle a los novios que vos los vas a ayudar con este regalo. Depende de vos como adquirirlo</p>
-            
-              <select id="select" ref="selectingGuest" class="form-control" required>
-                <option disabled selected>Quién se lo regala?</option>
-                <option v-for="guest in guests" :value="guest._id">{{ guest.description }}</option>
-              </select>
+              <app-search-guest (sendGuest)="sendGuest($event)"></app-search-guest>
+              <ul *ngFor="let guest of guestResultSearch">
+                <li> {{ guest.description }}</li>
+              </ul>
+              
               <div class="gift-response"></div>
             
           </div>
           <div class="modal-footer">
-            <button class="btn btn-primary" v-on:click="doGift()">Regalar</button>
+            <button class="btn btn-primary" (click)="doGift()">Regalar</button>
             <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
           </div>
           
         </div>
       </div>
     </div>
-  </div>-->
+</section>

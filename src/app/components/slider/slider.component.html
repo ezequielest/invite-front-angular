@@ -1,26 +1,9 @@
 <header class="owl-carousel owl-theme masthead">
-    <div class="item bg-1">
+    <div *ngFor="let slide of sliders; let i = index" class="item bg-{{i + 1}}">
       <div class="col-lg-12 my-auto">
         <div class="header-content mx-auto text-center">
-          <h1 class="mb-5">JULI & SANTI <i class="fas fa-heart"></i></h1>
-          <h3 class="mb-5">25.9.20</h3>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Save the date</a>
-        </div>
-      </div>
-    </div>
-    <div class="item bg-2">
-      <div class="col-lg-12 my-auto">
-        <div class="header-content mx-auto  text-center">
-          <h1 class="mb-5">BELEN Y NICOLAS <i class="fas fa-heart"></i></h1>
-          <h3 class="mb-5">25.9.20</h3>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Save the date</a>
-        </div>
-      </div>
-    </div>
-    <div class="item bg-3">
-      <div class="col-lg-12 my-auto">
-        <div class="header-content mx-auto  text-center">
-          <h1 class="mb-5">BELEN Y NICOLAS <i class="fas fa-heart"></i></h1>
+          <h1 class="mb-5">{{ nombreNovios }} <i class="fas fa-heart"></i></h1>
+          <p>{{ slide.description }} </p>
           <h3 class="mb-5">25.9.20</h3>
           <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Save the date</a>
         </div>

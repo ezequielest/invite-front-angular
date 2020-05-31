@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppSettings } from 'src/app/configs/settings.const';
 
 @Component({
   selector: 'app-countdown',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./countdown.component.scss']
 })
 export class CountdownComponent implements OnInit {
+
+  fechaEvento = AppSettings.countdown;
 
   text = {
     Year: 'Year',

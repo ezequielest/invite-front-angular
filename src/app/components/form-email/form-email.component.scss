@@ -1,16 +1,16 @@
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/mixins';
 
-section {
+.form {
     padding: 40px 0;
     text-align: center;
     color: fade-out(white, .2);
 
-    @include grandient_trans_img($theme-tertiary-dark, $theme-secondary-dark, '../../../assets/img/gallery/1.jpg');
+    @include grandient_trans_img($theme-tertiary-dark, $theme-secondary-dark, '../../../assets/img/novios/ellos.jpg');
 
     .container {
         border: solid;
-        padding: 150px 0;
+        padding: 40px 0;
         form {
             padding: 20px;
     
@@ -28,10 +28,6 @@ section {
             padding: 40px 20px;
         }
 
-    }
-
-    .modal {
-        color: #222;
     }
 
     

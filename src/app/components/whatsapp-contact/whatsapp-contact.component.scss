@@ -1,0 +1,20 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+// Styling for the download section
+section.contact {
+    text-align: center;
+    @include grandient_trans_img($theme-tertiary-dark, $theme-secondary-dark, '../../../assets/img/gallery/1.jpg');
+    color: #fff;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        i {
+            color: $brand-google-plus;
+
+            &.fa-whatsapp {
+                color: white;
+            }
+        }
+    }
+}

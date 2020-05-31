@@ -2,13 +2,23 @@
 @import '../../../assets/scss/mixins';
 
 // Styling for the features section
-section.features {
-    padding: 100px 0;
+section {
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+    @include grandient_trans_img($background-light-1, $background-light-2, '../../../assets/img/template/mrmss.jpg');
+    
+
+    background-size: cover;
 
     img {
         border-radius: 2px;
         width: 335px;
         object-position: -76px;
+    }
+
+    .container-items {
+        
     }
 
     .vertical-img-container {
