@@ -1,1 +1,5 @@
-<input type="text" class="form-control" [formControl]="guest" (keypress)="searchGuest($event)"  placeholder="Buscado de invitados">
+<input type="text" class="form-control" [formControl]="guest" (keyup)="searchGuest()"  placeholder="Buscado de invitados">
+
+<ul *ngIf="guest.value.length >= 3 && guestResultSearch">
+    <li class="item-result" *ngFor="let guest of guestResultSearch" (click)="selectGuest(guest)"> {{ guest.description }}</li>
+</ul>

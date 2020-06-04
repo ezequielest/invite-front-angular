@@ -18,4 +18,8 @@ export class GiftService {
     return this.http.get(`${this.base}/gift/userId/${this.userID}`);
   }
 
+  saveGift(payload) {
+    return this.http.post(`${this.base}/gift/toGift`, payload);
+  } 
+
 }

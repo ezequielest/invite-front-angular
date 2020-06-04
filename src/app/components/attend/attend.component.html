@@ -7,12 +7,7 @@
           <div name="contact" role="form">
             <div class="form-group">
               <label for="">Buscate en la lista, escribi tu codigo y dale enter.</label>
-              <input id="name" name="name" type="text" class="form-control" required>
-              <!--<ul v-if="guestList">
-                <li v-for="guest in guestList">
-                  <button data-toggle="modal" data-target="#guestModal"  ng-click="selectGuest(guest)">{{ guest.description }}</button>
-                </li>
-              </ul>-->
+              <app-search-guest (sendGuest)="selectGuest($event)"></app-search-guest>
             </div>
           </div>
           <div class="rta"></div>

@@ -30,10 +30,7 @@
           <div class="modal-body">
             <h6>Estas por regalar: {{ giftSelected.description }}</h6>
             <p>Recorga que tu regalo es para confirmarle a los novios que vos los vas a ayudar con este regalo. Depende de vos como adquirirlo</p>
-              <app-search-guest (sendGuest)="sendGuest($event)"></app-search-guest>
-              <ul *ngFor="let guest of guestResultSearch">
-                <li> {{ guest.description }}</li>
-              </ul>
+              <app-search-guest (sendGuest)="selectGuest($event)"></app-search-guest>
               
               <div class="gift-response"></div>
             

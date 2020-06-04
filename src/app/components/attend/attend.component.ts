@@ -13,4 +13,8 @@ export class AttendComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectGuest(guest){
+    console.log(guest);
+  }
+
 }
