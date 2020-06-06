@@ -5,6 +5,7 @@ import { GetGift, Gift } from 'src/app/interfaces/gift.interface';
 import { GuestService } from 'src/app/shared/services/guest.service';
 import { FormControl } from '@angular/forms';
 import { Guest } from 'src/app/interfaces/guest.interface';
+import { ConfigModal } from 'src/app/interfaces/config-modal.interface';
 
 declare const $;
 
@@ -19,6 +20,11 @@ export class GiftListComponent implements OnInit {
   giftSelected: Gift;
   guestSelected: Guest;
   guestResultSearch: Array<Guest>;
+
+  configModal: ConfigModal = {
+    title: 'Gracias',
+    message: 'Queremos agradecerte por este regalos!'
+  }
 
   constructor(private giftService: GiftService, private guestService: GuestService) { }
 
@@ -52,6 +58,7 @@ export class GiftListComponent implements OnInit {
       this.giftService.saveGift(payload).subscribe(res =>{
         $('#giftModal').modal('hide');
         this.getGift();
+        $('#messageModal').modal('show');
       });
     
   }

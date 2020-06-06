@@ -1,5 +1,5 @@
 export class AppSettings {
-    public static userID = '5eb6cb2a0229ff0a7cfd6708';
+    public static userID = '5ebde0bca0957904d7007b6f';
     public static inicialesNovios='E&T';
     public static nombreNovios='Ezequiel & Test';
     public static nombreNovio = 'Ezequiel';
